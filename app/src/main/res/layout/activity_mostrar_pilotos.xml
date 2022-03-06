@@ -22,4 +22,24 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.80" />
 
+    <Button
+        android:id="@+id/btnDeleteByDorsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Eliminar por dorsal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dorsalAEliminar"
+        tools:layout_editor_absoluteX="188dp" />
+
+    <EditText
+        android:id="@+id/dorsalAEliminar"
+        android:layout_width="193dp"
+        android:layout_height="43dp"
+        android:hint="Dorsal a eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteByDorsal"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+
+        tools:layout_editor_absoluteX="194dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

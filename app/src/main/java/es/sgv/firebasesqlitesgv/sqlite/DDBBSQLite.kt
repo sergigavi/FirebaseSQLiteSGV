@@ -4,6 +4,8 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.database.sqlite.SQLiteDatabase.CursorFactory
+import android.util.Log
+import android.widget.Toast
 
 class DDBBSQLite(context: Context, name: String, factory: CursorFactory?, version: Int) : SQLiteOpenHelper(context, name, factory, version)  {
 
@@ -12,14 +14,17 @@ class DDBBSQLite(context: Context, name: String, factory: CursorFactory?, versio
     }
 
     override fun onCreate(bbdd: SQLiteDatabase) {
-        var query:String = """
+
+        val query:String = """
             CREATE TABLE piloto (
-            Nombre TEXT,
-            Dorsal INTEGER,
-            Escudería TEXT,
+            Nombre TEXT PRIMARY KEY AUTOINCREMENT,
+            Dorsal INTEGER NOT NULL,
+            Escudería TEXT NOT NULL,
             Imagen TEXT
-            )
+            );
         """.trimIndent()
+
+        //Log.d("crear tabla", query)
 
         bbdd.execSQL(query)
     }
