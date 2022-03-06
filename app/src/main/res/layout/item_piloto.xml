@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- para dejarlo bonito tenemos que modificar el item_piloto.xml, lo voy a meter tod0 en una card, componente para darle elevacion al contenido y que quede más bonito
+Ahora el cardview pasa a ser el padre de todos-->
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#FF8787"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/IV_pilotoImg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            tools:background="@color/black"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/TV_nombrePiloto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="nombreDefault"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IV_pilotoImg"
+            />
+
+        <TextView
+            android:id="@+id/TV_dorsal"
+            android:layout_width="102dp"
+            android:layout_height="54dp"
+            android:textSize="44dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IV_pilotoImg"
+            app:layout_constraintTop_toBottomOf="@+id/TV_nombrePiloto"
+            tools:text="00" />
+
+        <TextView
+            android:id="@+id/TV_escuderia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            tools:text="escuderiaDefault"
+            android:textColor="#C8FF00"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesion"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#233E75"/>
+    <EditText
+        android:id="@+id/itEmail"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:hint="email"
+        android:layout_height="56dp"/>
+    <EditText
+        android:id="@+id/itContrasenna"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:hint="contraseña"
+        android:layout_height="56dp"/>
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#008A23"
+        android:text="Iniciar sesion">
+    </Button>
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#E17C00"
+        android:text="Registro">
+
+    </Button>
+
+</LinearLayout>

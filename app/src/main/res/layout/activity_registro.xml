@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#2132A6"
+        android:textSize="28sp"/>
+    <EditText
+        android:id="@+id/itRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        />
+    <EditText
+        android:id="@+id/itRegContra"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        />
+    <EditText
+        android:id="@+id/itRegContra2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="textPassword"
+        android:hint="Repetir Contraseña"
+        />
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Registrarse"
+        android:backgroundTint="#007C59"/>
+    <Button
+        android:id="@+id/btnIrLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ir al inicio"
+        android:backgroundTint="#007C59"/>
+
+
+
+</LinearLayout>
