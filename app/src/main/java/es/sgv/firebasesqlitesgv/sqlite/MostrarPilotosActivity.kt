@@ -70,6 +70,11 @@ class MostrarPilotosActivity : AppCompatActivity() {
         return usuarios
     }
 
+    /*private fun construirPiloto(): Piloto {
+        return Piloto(etId.text.toString(), etNombre.text.toString(), )
+        //TODO inicializar los botones y asignarles las cosas
+    }*/
+
 
     companion object{
         val pilotos = listOf<Piloto>(
