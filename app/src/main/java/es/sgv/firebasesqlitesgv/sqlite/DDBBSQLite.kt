@@ -17,7 +17,7 @@ class DDBBSQLite(context: Context, name: String, factory: CursorFactory?, versio
 
         val query:String = """
             CREATE TABLE piloto (
-            Nombre TEXT PRIMARY KEY AUTOINCREMENT,
+            Nombre TEXT PRIMARY KEY,
             Dorsal INTEGER NOT NULL,
             Escudería TEXT NOT NULL,
             Imagen TEXT
