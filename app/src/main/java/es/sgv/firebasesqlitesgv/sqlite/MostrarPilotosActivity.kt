@@ -53,7 +53,7 @@ class MostrarPilotosActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        //cargarDatos()
+        cargarDatos()
         val manager = LinearLayoutManager(this) //puedo cambiar el linear por un GridLayoutManager, y tengo que pasarle el numero de columnas por fila además del contexto (this)
         //vamos a usar los divider decorator para que quede mejor y diferenciar los diferentes items del recyclerview, en este caso solo le mete un divider entre item y item
         val decoration = DividerItemDecoration(this, manager.orientation /*LinearLayoutManager(this).orientation*/) //he puesto en una variable el linearLayoutManager(this) para usarlo aqui y debajo tambien
